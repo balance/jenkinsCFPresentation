@@ -2,3 +2,4 @@
 cflint-results.*
 junitResults.xml
 jmimemagic.log
+.vscode/*

@@ -21,7 +21,7 @@ pipeline {
     stage('Unit Tests') {
       steps {
         echo 'Running Unit Tests'
-        sh 'box testbox run runner="http://localhost:8080/tests/runner.cfm" reporter="JUnit" directory="tests.bundles" outputFile="./junitResults.xml"'
+        sh 'box testbox run runner="http://127.0.0.1:8080/tests/runner.cfm" reporter="JUnit" directory="tests.bundles" outputFile="./junitResults.xml"'
         sh 'ls'
         junit 'junitResults.xml'
       }
